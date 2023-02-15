@@ -1,0 +1,100 @@
+*, *::after ,*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans';
+  letter-spacing: 0.01em;
+  font-weight: normal;
+  -webkit-tap-highlight-color: transparent;
+}
+body {
+  position: relative;
+  font-size: 16px;
+  color: #29221F;
+  line-height: 32px;
+  background: linear-gradient(172.04deg, #EDF5E8 0%, #F6FAF3 100%);
+  background-repeat: no-repeat;
+  background-size: contain;
+  overflow-x: hidden;
+}
+
+@media (min-width: 1024px) {
+  body {
+    font-size: 20px;
+  }
+}
+
+ul, li, ol {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  font-weight: 400;
+  color: #fff;
+  cursor: pointer;
+}
+button, input {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+button, a, svg {
+  display: block;
+}
+
+/* html {
+  scroll-behavior: smooth !important;
+} */
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../assets/fonts/OpenSans-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../assets/fonts/OpenSans-Regular.ttf') format('truetype'),
+  url('../assets/fonts/open-sans.woff') format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../assets/fonts/OpenSans-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../assets/fonts/OpenSans-SemiBold.ttf') format('truetype'),
+  url('../assets/fonts/open-sans-semibold.woff') format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../assets/fonts/OpenSans-Bold.ttf') format('truetype'),
+  url('../assets/fonts/open-sans-bold.woff') format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Aclonica';
+  src: url('../assets/fonts/Aclonica.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Luckiest Guy';
+  src: url('../assets/fonts/LuckiestGuy-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+

@@ -1,0 +1,42 @@
+<template>
+    <BaseIcon v-bind="props">
+        <svg
+            width="32"
+            height="32"
+            viewBox="0 0 32 32"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+        >
+            <path
+                d="M16 29.3337C23.3638 29.3337 29.3333 23.3641 29.3333 16.0003C29.3333 8.63653 23.3638 2.66699 16 2.66699C8.63616 2.66699 2.66663 8.63653 2.66663 16.0003C2.66663 23.3641 8.63616 29.3337 16 29.3337Z"
+                stroke="#8D4A2A"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+            />
+            <path
+                d="M16 10.667L10.6666 16.0003L16 21.3337"
+                stroke="#8D4A2A"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+            />
+            <path
+                d="M21.3333 16H10.6666"
+                stroke="#8D4A2A"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+            />
+        </svg>
+    </BaseIcon>
+</template>
+
+<script lang="ts" setup>
+import BaseIcon from '@/components/base/BaseIcon.vue'
+import type { IconProps } from '@/components/base/BaseIcon.vue'
+
+export interface IIcon extends IconProps {}
+
+const props = defineProps<IIcon>()
+</script>

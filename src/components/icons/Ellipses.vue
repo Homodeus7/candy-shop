@@ -1,0 +1,53 @@
+<template>
+    <BaseIcon v-bind="props">
+        <svg
+            width="1241"
+            height="1069"
+            viewBox="0 0 1241 1069"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+        >
+            <ellipse
+                cx="620.5"
+                cy="449.5"
+                rx="620.5"
+                ry="619.5"
+                fill="white"
+                fill-opacity="0.07"
+            />
+            <ellipse
+                cx="619.5"
+                cy="450"
+                rx="500.5"
+                ry="499"
+                fill="white"
+                fill-opacity="0.07"
+            />
+            <ellipse
+                cx="617"
+                cy="450.5"
+                rx="380"
+                ry="378.5"
+                fill="white"
+                fill-opacity="0.07"
+            />
+            <ellipse
+                cx="617.5"
+                cy="451"
+                rx="284.5"
+                ry="283"
+                fill="white"
+                fill-opacity="0.07"
+            />
+        </svg>
+    </BaseIcon>
+</template>
+
+<script lang="ts" setup>
+import BaseIcon from '@/components/base/BaseIcon.vue'
+import type { IconProps } from '@/components/base/BaseIcon.vue'
+
+export interface IIcon extends IconProps {}
+
+const props = defineProps<IIcon>()
+</script>
