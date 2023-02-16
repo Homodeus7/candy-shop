@@ -1,91 +1,10 @@
 <template>
     <section class="content content-layout" id="Chapter">
         <div class="content_bg-sdk">
-            <picture>
-                <source
-                    media="(min-width: 640px)"
-                    srcset="@/assets/image/sdk/lefthouse.webp"
-                    type="image/webp"
-                />
-                <source
-                    srcset="@/assets/image/sdk/lefthouse-mobile.webp"
-                    type="image/webp"
-                />
-                <source
-                    srcset="@/assets/image/sdk/lefthouse-mobile.png"
-                    type="image/png"
-                />
-                <img
-                    src="@/assets/image/sdk/lefthouse.png"
-                    alt="house"
-                    class="left-house"
-                />
-            </picture>
-            <picture>
-                <source
-                    media="(min-width: 640px)"
-                    srcset="@/assets/image/sdk/backhouse.webp"
-                    type="image/webp"
-                />
-                <source
-                    srcset="@/assets/image/sdk/backhouse-mobile.webp"
-                    type="image/webp"
-                />
-                <source
-                    srcset="@/assets/image/sdk/backhouse-mobile.png"
-                    type="image/png"
-                />
-                <img
-                    src="@/assets/image/sdk/backhouse.png"
-                    alt="house"
-                    class="back-house"
-                />
-            </picture>
-            <picture>
-                <source
-                    media="(min-width: 640px)"
-                    srcset="@/assets/image/sdk/righthouse.webp"
-                    type="image/webp"
-                />
-                <source
-                    srcset="@/assets/image/sdk/righthouse-mobile.webp"
-                    type="image/webp"
-                />
-                <source
-                    srcset="@/assets/image/sdk/righthouse-mobile.png"
-                    type="image/png"
-                />
-                <img
-                    src="@/assets/image/sdk/righthouse.png"
-                    alt="house"
-                    class="right-house"
-                />
-            </picture>
-            <picture>
-                <source
-                    media="(min-width: 640px)"
-                    srcset="@/assets/image/sdk/road.webp"
-                    type="image/webp"
-                />
-                <source
-                    srcset="@/assets/image/sdk/road-mobile.webp"
-                    type="image/webp"
-                />
-                <source
-                    srcset="@/assets/image/sdk/road-mobile.png"
-                    type="image/png"
-                />
-                <img
-                    src="@/assets/image/sdk/road.png"
-                    alt="road"
-                    class="road"
-                />
-            </picture>
-
             <img
-                src="@/assets/image/sdk/leftcookie.svg"
-                alt="factory"
-                class="left-cookie"
+                src="@/assets/image/candy/Dream_Background.jpg"
+                alt="dream-background"
+                class="dream_background"
             />
             <picture>
                 <source
@@ -154,10 +73,7 @@
 </template>
 
 <script lang="ts" setup>
-import { useWindowSize } from '@vueuse/core'
 import BaseButton from '@/components/base/BaseButton.vue'
-
-const { width } = useWindowSize()
 </script>
 
 <style lang="scss" scoped>
@@ -165,65 +81,29 @@ const { width } = useWindowSize()
 
 .content {
     padding-top: 123px;
-    padding-bottom: 500px;
     padding-left: 0 !important;
     padding-right: 0 !important;
 
     position: relative;
     display: flex;
     flex-direction: column-reverse;
-    justify-content: center;
-
-    @include for-size(md) {
-        padding-bottom: 600px;
-    }
+    align-items: center;
 
     @include for-size(xl) {
         margin: 0 auto;
         flex-direction: row;
         justify-content: space-between;
-        padding-bottom: 200px;
     }
 
     &_bg-sdk {
-        position: relative;
-
-        .left-house {
-            position: absolute;
-        }
-
-        .back-house {
-            position: absolute;
-            left: 24px;
-
-            z-index: -1;
-
-            @include for-size(md) {
-                left: 120px;
-                top: -5px;
+        .dream_background {
+            margin: 0 auto;
+            max-width: 550px;
+            @include for-size(sm) {
+                max-width: 550px;
             }
-        }
-
-        .right-house {
-            position: absolute;
-            right: 0;
-            top: -50px;
-
-            @include for-size(md) {
-                left: 400px;
-                top: -70px;
-            }
-        }
-
-        .road {
-            position: absolute;
-            top: 165px;
-            z-index: -2;
-            max-width: 100%;
-            @include for-size(md) {
-                top: 255px;
-                left: 0;
-                max-width: 751px;
+            @include for-size(lg) {
+                max-width: 750px;
             }
         }
 
@@ -294,7 +174,6 @@ const { width } = useWindowSize()
 
         &-card {
             position: relative;
-
             font-size: 16px;
             line-height: 28px;
             letter-spacing: 0.01em;

@@ -3,7 +3,7 @@
         <div class="content">
             <div class="content_cards">
                 <img
-                    src="@/assets/image/swap/cookies.svg"
+                    src="/src/assets/image/candy/Dream_Background(1).jpg"
                     alt="cookie"
                     class="image"
                 />
@@ -38,7 +38,7 @@
                     </p>
                 </div>
                 <div class="content_block__button">
-                    <BaseButton primary>
+                    <BaseButton primary v-motion-slide-visible-once-bottom>
                         <a class="button-text">Opening soon</a>
                     </BaseButton>
                 </div>
@@ -50,7 +50,7 @@
                 v-motion-fade-visible
                 class="content_roadmap__title middle-brown-title"
             >
-                candy blog
+                candy travel
             </h3>
             <div class="content_roadmap__cards">
                 <BaseCard
@@ -119,13 +119,10 @@ const roadmapCards = reactive([
 
         &_cards {
             position: relative;
-            padding-top: 90px;
-
             .image {
-                max-width: 353px;
-
+                max-width: 550px;
                 @include for-size(md) {
-                    max-width: 580px;
+                    max-width: 550px;
                 }
             }
         }
@@ -161,6 +158,7 @@ const roadmapCards = reactive([
                 width: 343px;
                 margin-top: 56px;
                 position: relative;
+                margin-bottom: 40px;
 
                 @include for-size(xl) {
                     width: 260px;
@@ -180,7 +178,7 @@ const roadmapCards = reactive([
         }
 
         &_roadmap {
-            padding-top: 100px;
+            padding-top: 40px;
 
             @include for-size(xl) {
                 padding-top: 150px;

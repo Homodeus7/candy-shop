@@ -66,20 +66,9 @@
                     class="image"
                 />
             </div>
+            <img class="right-cookie" src="@/assets/image/candy/gallery4.png" />
 
-            <img
-                class="left-cookie"
-                src="@/assets/image/factory/leftcookie.png"
-            />
-            <img
-                class="right-cookie"
-                src="@/assets/image/factory/rightcookie.png"
-            />
-
-            <img
-                class="top-cookie"
-                src="@/assets/image/factory/topcookie.png"
-            />
+            <img class="top-cookie" src="@/assets/image/candy/gallery8.png" />
         </div>
     </section>
 </template>
@@ -222,8 +211,8 @@ const cookieImg = useElementBounding(bigcookie)
             position: absolute;
             top: -70px;
             left: 10%;
-            width: 83px;
-            filter: blur(1px);
+            width: 100px;
+            filter: blur(2px);
             @include for-size(lg) {
                 filter: none;
                 width: 149px;
@@ -237,6 +226,7 @@ const cookieImg = useElementBounding(bigcookie)
         }
         .right-cookie {
             position: absolute;
+            width: 180px;
             right: 0;
             top: 100px;
             display: none;
@@ -245,16 +235,18 @@ const cookieImg = useElementBounding(bigcookie)
             }
             @media (min-width: 1439px) {
                 display: block;
-                right: -96px;
+                filter: blur(2px);
+                right: -86px;
             }
         }
         .top-cookie {
             position: absolute;
-            top: -740px;
+            top: -600px;
             right: -14px;
-            width: 85px;
+            width: 83px;
+            filter: blur(2px);
             @include for-size(xl) {
-                width: 133px;
+                width: 150px;
                 top: -700px;
                 left: 53%;
             }
